@@ -4,14 +4,16 @@ using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Smart_Binance_Server.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20191008152620_SeedInitialData")]
+    partial class SeedInitialData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,21 +39,15 @@ namespace Smart_Binance_Server.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("d385637a-f8d2-46b3-a993-e517539e827d"),
+                            Id = new Guid("58915a1e-2dbc-4cf1-8bb8-2e050982e90b"),
                             Age = 24,
                             Name = "David Lagrange"
                         },
                         new
                         {
-                            Id = new Guid("ecdd3716-faf1-4926-9d47-a29750739da2"),
+                            Id = new Guid("43cee40e-03d2-4e3a-b881-af689e1d81da"),
                             Age = 24,
                             Name = "Sierra Seal"
-                        },
-                        new
-                        {
-                            Id = new Guid("680971b5-43dc-4f53-a3a4-b9479e9a4176"),
-                            Age = 5,
-                            Name = "Roma Michele"
                         });
                 });
 #pragma warning restore 612, 618
