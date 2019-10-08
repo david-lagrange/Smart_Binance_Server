@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Smart_Binance_Server.Entities
 {
-    [Table("ApplicaitonUser")]
     public class ApplicationUser
     {
-        [Column("Id")]
         public Guid Id { get; set; }
 
         [Required]
