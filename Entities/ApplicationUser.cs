@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Smart_Binance_Server.Entities
+namespace Entities
 {
     public class ApplicationUser
     {

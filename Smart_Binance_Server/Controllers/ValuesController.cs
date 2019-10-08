@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Contracts;
 using Microsoft.AspNetCore.Mvc;
-using Smart_Binance_Server.Entities;
+using Entities;
 
 namespace Smart_Binance_Server.Controllers
 {

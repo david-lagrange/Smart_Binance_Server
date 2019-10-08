@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NLog;
-using Smart_Binance_Server.Entities;
+using Entities;
 using Smart_Binance_Server.Extensions;
 using System;
 using System.IO;
@@ -30,7 +30,8 @@ namespace Smart_Binance_Server
             services.ConfigureIISIntegration();
 
             services.AddDbContext<ApplicationContext>(opts =>
-                opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
+                opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection"),
+                    options => options.MigrationsAssembly("Smart_Binance_Server")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
