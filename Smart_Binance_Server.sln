@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_Binance_Server", "Smart_Binance_Server\Smart_Binance_Server.csproj", "{F50D7858-C03A-4FB2-B87F-E5233CFE568A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smart_Binance_Server", "Smart_Binance_Server\Smart_Binance_Server.csproj", "{F50D7858-C03A-4FB2-B87F-E5233CFE568A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{F3F856B5-E968-483F-836D-E3C9963A4D8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerService", "LoggerService\LoggerService.csproj", "{F3F856B5-E968-483F-836D-E3C9963A4D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{7C5A91E2-6260-4271-BDB7-E03363C29E1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contracts", "Contracts\Contracts.csproj", "{7C5A91E2-6260-4271-BDB7-E03363C29E1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,26 @@ Global
 		{7C5A91E2-6260-4271-BDB7-E03363C29E1D}.Release|x64.Build.0 = Release|Any CPU
 		{7C5A91E2-6260-4271-BDB7-E03363C29E1D}.Release|x86.ActiveCfg = Release|Any CPU
 		{7C5A91E2-6260-4271-BDB7-E03363C29E1D}.Release|x86.Build.0 = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|x64.Build.0 = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Debug|x86.Build.0 = Debug|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|ARM.Build.0 = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|ARM64.Build.0 = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|x64.ActiveCfg = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|x64.Build.0 = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|x86.ActiveCfg = Release|Any CPU
+		{B85E82DD-3873-4D6E-AAE8-24DBBD68D30F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
