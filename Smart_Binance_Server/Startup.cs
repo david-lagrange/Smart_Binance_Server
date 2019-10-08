@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NLog;
+using Smart_Binance_Server.Entities;
 using Smart_Binance_Server.Extensions;
 using System;
 using System.IO;
@@ -26,6 +28,9 @@ namespace Smart_Binance_Server
             services.ConfigureCores();
 
             services.ConfigureIISIntegration();
+
+            services.AddDbContext<ApplicationContext>(opts =>
+                opts.UseSqlServer(Configuration.GetConnectionString("sqlConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

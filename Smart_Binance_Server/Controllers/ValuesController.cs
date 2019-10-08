@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Smart_Binance_Server.Entities;
 
 namespace Smart_Binance_Server.Controllers
 {
@@ -11,7 +12,12 @@ namespace Smart_Binance_Server.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ApplicationContext _context;
         private ILoggerManager _logger;
+        public ValuesController(ApplicationContext context)
+        {
+            _context = context;
+        }
         public ValuesController(ILoggerManager logger)
         {
             _logger = logger;
@@ -50,6 +56,7 @@ namespace Smart_Binance_Server.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
         }
     }
 }
