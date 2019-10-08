@@ -30,6 +30,12 @@ namespace Entities.Configuration
                     Id = Guid.NewGuid(),
                     Name = "Roma Michele",
                     Age = 5
+                },
+                new ApplicationUser
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Harper Lagrange",
+                    Age = 1
                 }
             );
           
